@@ -325,6 +325,7 @@ p {
 .accordion-header h4 {
     margin: 0;
     font-size: 1.25rem;
+    color: var(--text-color);
 }
 
 .accordion-icon {
