@@ -702,16 +702,23 @@ p {
 
 /* Responsive Design */
 	@media (max-width: 768px) {
+	    /* Reduce spacing for mobile */
+	    .section {
+	        padding: var(--spacing-md) 0;
+	    }
+
 	    h1 {
 	        font-size: 3rem;
 	    }
 
     h2 {
         font-size: 2rem;
+        margin-bottom: var(--spacing-sm);
     }
 
     h3 {
         font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
     }
 
     .hero-section {
@@ -741,6 +748,7 @@ p {
             "bio"
             "image"
             "badges";
+        gap: var(--spacing-md);
     }
 
     .meet-sophia {
@@ -751,15 +759,18 @@ p {
 
     .clearances-badges {
         padding: var(--spacing-md);
+        margin-top: var(--spacing-md);
     }
 
     .badges-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
 
     .offer-layout {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: var(--spacing-md);
     }
 
     .offer-content {
@@ -773,10 +784,20 @@ p {
     .services-accordion {
         margin-left: auto;
         margin-right: auto;
+        margin-top: var(--spacing-md);
+    }
+
+    .accordion-item {
+        margin-bottom: var(--spacing-xs);
     }
 
     .footer-container {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .site-footer {
+        padding: var(--spacing-lg) 0 var(--spacing-sm);
     }
 
     .main-nav {
@@ -811,13 +832,22 @@ p {
     }
 
     .contact-card {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
+    }
+
+    .contact-card h2 {
+        margin-bottom: var(--spacing-sm);
     }
 
     .contact-email {
         padding: 0.85rem 1.5rem;
         font-size: 0.95rem;
         word-break: break-all;
+    }
+
+    /* Photo Collage Mobile */
+    .photo-collage {
+        padding: var(--spacing-md) 0;
     }
 
 }
