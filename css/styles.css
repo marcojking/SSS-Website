@@ -722,9 +722,9 @@ p {
     }
 
     .hero-section {
-        min-height: 100vh;
-        padding-top: 12vh;
-        padding-bottom: 60vh;
+        min-height: 75vh;
+        padding-top: 8vh;
+        padding-bottom: 40vh;
         padding-left: var(--spacing-sm);
         padding-right: var(--spacing-sm);
         background-position: 20% center;
@@ -856,7 +856,7 @@ p {
 @media (max-width: 400px) {
     .hero-section {
         background-position: 15% center;
-        padding-bottom: 70vh;
+        padding-bottom: 45vh;
     }
 
     h1 {
